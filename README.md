@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+Mentalyc Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the Mentalyc Assessment project, which contains React components, integrated with Storybook for component development and documentation. The project also includes a mocked design for easier UI and functionality testing.
 
-## Available Scripts
 
-In the project directory, you can run:
+Installation
 
-### `npm start`
+Step 1: Clone the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/mentalyc-assessment.git
+```
+```bash
+cd mentallyc-assessment
+```
+Step 2: Install dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
+Or using yarn:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step 3: Additional Setup (Optional)
 
-### `npm run build`
+    TailwindCSS Configuration: The project uses TailwindCSS for styling. Make sure your build system (via PostCSS) is correctly configured to compile Tailwind's styles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ESLint: The project uses ESLint to enforce consistent code quality. You can configure your editor to automatically lint your code or run the following command to lint manually:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm run lint
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Usage
+Running the Development Server
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
+This will start the server and open the app in your default browser, typically at http://localhost:3000.
+Running Storybook
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Storybook is set up to display  React components in isolation. To start Storybook in development mode, run:
+```bash
+npm run storybook
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will open Storybook at http://localhost:6006, where you can browse through your components, interact with them, and view their documentation.
+Running the Build Process
 
-## Learn More
+To build the project for production:
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
